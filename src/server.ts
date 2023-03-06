@@ -11,6 +11,7 @@ const logWarn = "\x1b[33m%s\x1b[0m";
 const logError = "\x1b[31m";
 
 /** Connect to Mongo */
+// @ts-ignore
 mongoose.connect(config.mongo.url, { retryWrites: true, w: 'majority'})
     .then(() => {
         console.log(logInfo, "connected")

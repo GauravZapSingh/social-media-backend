@@ -44,3 +44,16 @@ Built using Node.js, Express.js, MongoDB, Typescript, Jest
     * Rate Limiting
     * Test cases using Jest
     * Api security
+    
+> **_NOTE:_**  Deployed the app on cyclic. Url is https://nervous-wasp-suspenders.cyclic.app but api calls are failing due to private and public key for RS256 algorithm event though this works fine on my local machine. Error message is pasted below
+
+```
+{
+    "message": {
+        "msgBody": "Something went wrong",
+        "msgErrorDesc": "Error: secretOrPrivateKey must be an asymmetric key when using RS256",
+        "msgError": true
+    }
+}
+```
+I am currently trying to debug it. Sorry for the inconvenience.

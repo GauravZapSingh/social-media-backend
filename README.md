@@ -1,4 +1,4 @@
-# Cutshort Backend Assignmnet
+# Backend Api
 App to Read, Write Posts and Todo. 
 Built using Node.js, Express.js, MongoDB, Typescript, Jest
 
@@ -11,26 +11,26 @@ Built using Node.js, Express.js, MongoDB, Typescript, Jest
     * Create access token and refresh token and is set on cookies for authentication
 * User Login
     * Login with email id and password
-    > router.post('/api/user/login')
+    > router.post('/api/user/login')<br/>
     > router.delete('/api/user/logout')
     * On successful login create access token and refresh token and is set on cookies for authentication
 * Post
     * Add, Edit, Delete post by logged in user/owner
-    > router.post('/api/addPost')
-    > router.put('/api/:userId/updatePost/:postId')
+    > router.post('/api/addPost')<br/>
+    > router.put('/api/:userId/updatePost/:postId')<br/>
     > router.delete('/api/:userId/deletePost/:postId')
     * Anyone can access post (Pagination, Sorting)
-    > router.get('/api/:userId/posts?page=1&limit=5&sort=title')
+    > router.get('/api/:userId/posts?page=1&limit=5&sort=title')<br/>
     > router.get('/api/:userId/posts/:postId')
     * Anyone can comment on post
     > router.post('/api/:userId/comment/:postId')
 * Todo
     * Add, Edit, Delete todo by logged in user/owner
-    > router.post('/api/addTodo')
-    > router.put('/api/:userId/updateTodo/:todoId')
+    > router.post('/api/addTodo')<br/>
+    > router.put('/api/:userId/updateTodo/:todoId')<br/>
     > router.delete('/api/:userId/deleteTodo/:todoId')
     * Anyone can access todo (Pagination, Sorting, Filter based on 'Marked as Completed')
-    > router.get('/api/:userId/todos?page=1&limit=5&completed=true&sort=title')
+    > router.get('/api/:userId/todos?page=1&limit=5&completed=true&sort=title')<br/>
     > router.get('/api/:userId/todos/:todoId')
 * Admin
     * Can see all users
@@ -56,4 +56,3 @@ Built using Node.js, Express.js, MongoDB, Typescript, Jest
     }
 }
 ```
-I am currently trying to debug it. Sorry for the inconvenience.
